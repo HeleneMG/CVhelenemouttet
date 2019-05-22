@@ -3,31 +3,30 @@ html{
 	padding: 0px;
 }
 body{
-  background-color: #282c34;
-  color: white;
-  font-family: 'Roboto Mono', monospace;
+  background-color: #F5FFFA	;
+  font-family: 'Comfortaa', crusive;
   font-weight: 100;
-  color: #abb2bf;
+  color: #778899	;
   margin: 0px;
   padding: 0px;
 }
 
 a{
   text-decoration: none;
-  color: #abb2bf
+  color: #778899	;
 }
 a:hover{
-  color: #52F94C;
+  color: #F5FFFA;
 }
 
 /**HEADER**/
 
 header{
   width: 100%;
-  background-color: #21252b;
+  background-color: #BED3EF;
   height: 75vh;
   border-style: solid;
-  border-color: #1E2126;
+  border-color: #BED3EF;
   margin: 0;
   padding: 0;
 }
@@ -44,7 +43,7 @@ h2{
   padding-top:1.8vh;
   font-size: 2.8em;
   font-weight: 400;
-  color: #e06c75;
+  color: #F5FFFA;
 
 }
 
@@ -127,7 +126,7 @@ h4{
   color: #d19a66;
 }
 .jobs{
-  color: #52F94C;
+  color: #66CDAA;
 }
 .container2{
   width: 70%;
@@ -169,11 +168,16 @@ h4{
 }
 
 footer{
-  background-color: #21252b;
+  background-color: #BED3EF;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   text-align: center;
   font-size: 1.2em;
+}
+
+footer hr{
+  color: #F5FFFA;
+  height: 0.5px;
 }
 
 #scroll_to_top { 
