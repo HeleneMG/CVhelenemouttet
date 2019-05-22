@@ -108,6 +108,7 @@ h4{
 .star{
   grid-column: 2;
   text-align: left;
+  color: #3F444D;
 }
 
 /**formation - experiences**/
