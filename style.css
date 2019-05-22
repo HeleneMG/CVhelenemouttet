@@ -103,6 +103,7 @@ h4{
 .comp{
   grid-column: 1;
   text-align: right;
+  padding-right: 1em;
 }
 .star{
   grid-column: 2;
@@ -113,6 +114,7 @@ h4{
 
 .formation h4{
   font-size: 2.5em;
+  text-align: right;
 }
 .diplomes{
   color: #d19a66;
@@ -164,5 +166,21 @@ footer{
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
+}
+
+/**Media Queries**/
+
+@media screen and (max-width: 375px) {
+  header{
+    height: 20vh;
+  }
+
+  .trait{
+  padding-top:4em;
+  font-size:4em;
+  text-align: center;
+  grid-column: 2;
+  color: #abb2bf;
+}
 }
