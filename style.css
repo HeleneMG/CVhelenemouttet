@@ -73,12 +73,7 @@ h4{
   color: #56b6c2;
   font-size: 2.5em;
 }
-.diplomes{
-  color: #d19a66;
-}
-.jobs{
-  color: #52F94C;
-}
+
 .lang{
   color: #e06c75;
 }
@@ -119,6 +114,12 @@ h4{
 .formation h4{
   font-size: 2.5em;
 }
+.diplomes{
+  color: #d19a66;
+}
+.jobs{
+  color: #52F94C;
+}
 .container2{
   width: 70%;
   margin-right: auto;
@@ -136,7 +137,13 @@ h4{
   grid-column: 3;
   font-size: 1.5em;
 }
-
+.trait{
+  padding-top:4em;
+  font-size:2.2em;
+  text-align: center;
+  grid-column: 2;
+  color: #abb2bf;
+}
 /**langues**/
 
 .langues h4{
