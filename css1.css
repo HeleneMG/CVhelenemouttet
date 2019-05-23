@@ -4,9 +4,9 @@ html{
 }
 body{
   background-color: #F5FFFA	;
-  font-family: 'Comfortaa', crusive;
+  font-family: 'Poppins', sans-serif;
   font-weight: 100;
-  color: #778899	;
+  color: #778899;
   margin: 0px;
   padding: 0px;
 }
@@ -31,12 +31,27 @@ header{
   padding: 0;
 }
 
+.btn {
+  background-color: rgb(158, 159, 209); 
+  border: none;
+  color: white;
+  padding: 5px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+.btn:hover{
+  background-color: rgb(161, 179, 207);
+}
+
 h1{
   text-align: center;
   font-size: 3.7em;
   font-weight: 400;
   margin-top: 0;
-  padding-top: 2.8em;
+  padding-top: 2.4em;
 }
 h2{
   text-align: center;
@@ -113,7 +128,7 @@ h4{
 .star{
   grid-column: 2;
   text-align: left;
-  color: #3F444D;
+  color: rgb(231, 238, 235)	;
 }
 
 /**formation - experiences**/

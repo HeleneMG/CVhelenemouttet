@@ -2,18 +2,19 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css" title="">
-  <link rel="alternate stylesheet" type="text/css" href="style2.css" title="style2">
+  <link href="fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  <link href="fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" type="text/css" href="css0.css" title="CSS0">
+  <link rel="alternate stylesheet" type="text/css" href="css1.css" title="CSS1">
+  <!--<link rel="alternate stylesheet" type="text/css" href="css2.css" title="CSS2">-->
   <title>CV Hélène Mouttet</title>
 </head>
 
-<body>
+<body onload="setActiveStyleSheet('CSS0')">
 <!-- TITRE -->
   <header>
-    <button onclick="setActiveStyleSheet('')">Dark</button>
-    <button onclick="setActiveStyleSheet('style2')">Bright</button>
+    <button class="btn" onclick="setActiveStyleSheet('CSS1')">Bright</button>
+    <button class="btn" onclick="setActiveStyleSheet('CSS0')">Dark</button>
     <h1>Hélène Mouttet</h1>
     <h2>Développeuse Web et Web mobile JavaScript</h2>
   </header>
@@ -120,6 +121,7 @@
 <div id="scroll_to_top">
   <a href="#top"><img src="img/arrow.png" alt="Retourner en haut" /></a>
 </div>
+
 <script src="main.js"></script>
 
   </body>
