@@ -10,14 +10,18 @@
   <title>CV Hélène Mouttet</title>
 </head>
 
-<body onload="setActiveStyleSheet('CSS0')">
+<body onload="setActiveStyleSheet('CSS0')" onload="myTimer()">
 <!-- TITRE -->
   <header>
     <button class="btn" onclick="setActiveStyleSheet('CSS1')">Bright</button>
     <button class="btn" onclick="setActiveStyleSheet('CSS0')">Dark</button>
+    <p id="demo"></p>
     <h1>Hélène Mouttet</h1>
     <h2>Développeuse Web et Web mobile JavaScript</h2>
   </header>
+
+  <span id="heure"></span>
+  <script type="text/javascript">window.onload = heure('heure');</script>
 
 
 <!-- Présentation -->
@@ -74,6 +78,7 @@
       </ul>
     </section>
 <div class="trait">|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br></div>
+
 <!-- Expériences pro -->
   <section class="experiences">
     <h4>Expériences</h4>
@@ -121,6 +126,7 @@
 <div id="scroll_to_top">
   <a href="#top"><img src="img/arrow.png" alt="Retourner en haut" /></a>
 </div>
+
 
 <script src="main.js"></script>
 
