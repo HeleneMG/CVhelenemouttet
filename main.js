@@ -41,13 +41,13 @@ var myVar = setInterval(function () {myTimer()}, 1000);
 ScrollReveal().reveal('h1', {
   duration: 3000,  
   scale: 0.8, 
-  reset: false 
+  reset: true 
 });
 
 ScrollReveal().reveal('h2', {
   duration: 4000,
   scale: 0.6,
-  reset: false
+  reset: true
 });
 
 ScrollReveal().reveal('.comp', {
