@@ -3,35 +3,34 @@
 <head>
   <meta charset="utf-8">
   <link href="fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
-  <link href="fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">  
+  <link href="fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="css0.css" title="CSS0">
   <link rel="alternate stylesheet" type="text/css" href="css1.css" title="CSS1">
-  <!--<link rel="alternate stylesheet" type="text/css" href="css2.css" title="CSS2">-->
   <title>CV Hélène Mouttet</title>
 </head>
 
-<body onload="setActiveStyleSheet('CSS0')" onload="myTimer()">
+<body onload="setActiveStyleSheet('CSS0')">
 <!-- TITRE -->
   <header>
+<!--BOUTONS SWITCH-->
+    <div class="switch">
     <button class="btn" onclick="setActiveStyleSheet('CSS1')">Bright</button>
     <button class="btn" onclick="setActiveStyleSheet('CSS0')">Dark</button>
-    <p id="demo"></p>
+    </div>
+<!--HEURE-->
+    <p id="horloge"></p>
     <h1>Hélène Mouttet</h1>
     <h2>Développeuse Web et Web mobile JavaScript</h2>
   </header>
 
-  <span id="heure"></span>
-  <script type="text/javascript">window.onload = heure('heure');</script>
-
-
-<!-- Présentation -->
+<!-- PRESENTATION -->
   <section class="presentation" >
     <hr color="#abb2bf">
     <p>En formation de développeuse Web et Web mobile spécialisation JavaScript chez Simplon à Marseille jusqu'au 8 novembre, je suis à la recherche d'un stage d'observation de 4 semaines du 1er au 26 juillet</p>
     <hr color="#abb2bf">
   </section>
 
-  <!-- Compétences -->
+<!-- COMPETENCES -->
     <section class="competences">
     <h4>Compétences</h4>
     <div class="container">
@@ -60,7 +59,7 @@
     </div>
   </section>
 
-  <!-- Formation -->
+  <!-- FORMATION -->
   <div class="container2">
     <section class="formation">
       <h4>Formation</h4>
@@ -79,7 +78,7 @@
     </section>
 <div class="trait">|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br>|<br></div>
 
-<!-- Expériences pro -->
+<!-- EXPERIENCE  -->
   <section class="experiences">
     <h4>Expériences</h4>
     <ul>
@@ -97,7 +96,7 @@
   </section>
 </div>
 
-<!-- Langues -->
+<!-- LANGUES -->
     <section class="langues">
       <h4>Langues</h4>
       <ul>
@@ -106,7 +105,7 @@
       </ul>
     </section>
 
-<!-- Coordonnées -->
+<!-- COORDONNEES -->
 <footer>
     <section class="coordonnees">
       <ul>
@@ -123,12 +122,11 @@
     </section>
 </footer>
 
+<!--TO TOP-->
 <div id="scroll_to_top">
   <a href="#top"><img src="img/arrow.png" alt="Retourner en haut" /></a>
 </div>
 
-
 <script src="main.js"></script>
-
   </body>
 </html>
