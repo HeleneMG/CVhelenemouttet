@@ -82,22 +82,22 @@ ScrollReveal().reveal('.jobs', {
 });
 ScrollReveal().reveal('.reveallangues', {
   duration: 3000,
-  origin: 'left',
-  distance: '100px',
+  origin: 'top',
+  distance: '30px',
   reset: true,
   viewFactor: 0.2
 });
 ScrollReveal().reveal('.coordonnees1', {
   duration: 2000,
   origin: 'left',
-  distance: '200px',
+  distance: '400px',
   reset: true,
   viewFactor: 0.7
 });
 ScrollReveal().reveal('.coordonnees2', {
   duration: 2000,
   origin: 'right',
-  distance: '200px',
+  distance: '400px',
   reset: true,
   viewFactor: 0.7
 });
