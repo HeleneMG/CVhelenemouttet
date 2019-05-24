@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <link href="fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
   <link href="fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+  <script src="https://unpkg.com/scrollreveal"></script>
   <link rel="stylesheet" type="text/css" href="css0.css" title="CSS0">
   <link rel="alternate stylesheet" type="text/css" href="css1.css" title="CSS1">
   <title>CV Hélène Mouttet</title>
@@ -17,10 +18,10 @@
     <button class="btn" onclick="setActiveStyleSheet('CSS1')">Bright</button>
     <button class="btn" onclick="setActiveStyleSheet('CSS0')">Dark</button>
     </div>
-<!--HEURE-->
-    <p id="horloge"></p>
     <h1>Hélène Mouttet</h1>
     <h2>Développeuse Web et Web mobile JavaScript</h2>
+    <!--HEURE-->
+    <p id="horloge"></p>
   </header>
 
 <!-- PRESENTATION -->
@@ -98,7 +99,7 @@
 
 <!-- LANGUES -->
     <section class="langues">
-      <h4>Langues</h4>
+      <h4 class="reveallangues">Langues</h4>
       <ul>
         <li><span class="lang">Anglais</span> > niveau B1</li>
         <li><span class="lang">Espagnol</span> > niveau A1</li>
@@ -107,17 +108,19 @@
 
 <!-- COORDONNEES -->
 <footer>
-    <section class="coordonnees">
+    <section class="coordonnees1">
       <ul>
-        <li>36, avenue de Saint Barnabé<br>Bat B12, 13012 Marseille</li>
+        <li><span class="adresse">36, avenue de Saint Barnabé<br>Bat B12, 13012 Marseille</span></li>
         <hr>
-        <li><a href="mailto:helene.mouttet@gmail.com" target="_top"><!--<img src="img/mail.png" alt="mail">-->helene.mouttet@gmail.com</a></li>
+        <li><span class="mail"></span><a href="mailto:helene.mouttet@gmail.com" target="_top"><!--<img src="img/mail.png" alt="mail">-->helene.mouttet@gmail.com</a></span></li>
         <hr>
-        <li>06 08 85 03 05</li>
+    </section>
+    <section class="coordonnees2">
+        <li><span class="telephone"></span>06 08 85 03 05</li>
         <hr>
-        <li><a title="linkedin" href="https://www.linkedin.com/in/helene-mouttet/" target="blank"><!--<img src="img/linkedin.png" alt="linkedin">-->LinkedIn</a></li>
+        <li><span class="likedin"></span><a title="linkedin" href="https://www.linkedin.com/in/helene-mouttet/" target="blank"><!--<img src="img/linkedin.png" alt="linkedin">-->LinkedIn</a></span></li>
         <hr>
-        <li>Permis B, véhicule personnel</li>
+        <li><span class="permis"></span>Permis B, véhicule personnel</span></li>
       </ul>
     </section>
 </footer>

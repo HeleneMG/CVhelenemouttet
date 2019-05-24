@@ -37,24 +37,67 @@ var myVar = setInterval(function () {myTimer()}, 1000);
     document.getElementById("horloge").innerHTML = t;
   }
 
-//to top
-jQuery(document).ready(function () {
-  var duration = 500;
-  jQuery(window).scroll(function () {
-    if (jQuery(this).scrollTop() > 100) {
-      // Si un défillement de 100 pixels ou plus.
-      // Ajoute le bouton
-      jQuery('.cRetour').fadeIn(duration);
-    } else {
-      // Sinon enlève le bouton
-      jQuery('.cRetour').fadeOut(duration);
-    }
-  });
+  //scroll reveal
+ScrollReveal().reveal('h1', {
+  duration: 3000,  
+  scale: 0.8, 
+  reset: false 
+});
 
-  jQuery('.cRetour').click(function (event) {
-    // Un clic provoque le retour en haut animé.
-    event.preventDefault();
-    jQuery('html, body').animate({ scrollTop: 0 }, duration);
-    return false;
-  })
+ScrollReveal().reveal('h2', {
+  duration: 4000,
+  scale: 0.6,
+  reset: false
+});
+
+ScrollReveal().reveal('.comp', {
+  duration: 1500,
+  distance: '100px',
+  origin: 'left',
+  scale: 1,
+  reset: true
+});
+
+ScrollReveal().reveal('.star', {
+  duration: 2000,
+  distance: '100px',
+  origin: 'right',
+  scale: 1,
+  reset: true
+});
+
+ScrollReveal().reveal('.diplomes', {
+  duration: 2500,
+  origin: 'left',
+  distance: '200px',
+  reset: true,
+  viewFactor: 0.2
+});
+ScrollReveal().reveal('.jobs', {
+  duration: 3500,
+  origin: 'right',
+  distance: '300px',
+  reset: true,
+  viewFactor: 0.2
+});
+ScrollReveal().reveal('.reveallangues', {
+  duration: 3000,
+  origin: 'left',
+  distance: '100px',
+  reset: true,
+  viewFactor: 0.2
+});
+ScrollReveal().reveal('.coordonnees1', {
+  duration: 2000,
+  origin: 'left',
+  distance: '200px',
+  reset: true,
+  viewFactor: 0.7
+});
+ScrollReveal().reveal('.coordonnees2', {
+  duration: 2000,
+  origin: 'right',
+  distance: '200px',
+  reset: true,
+  viewFactor: 0.7
 });
