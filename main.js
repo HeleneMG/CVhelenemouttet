@@ -8,7 +8,7 @@
     }
 }
 
-//chgt couleur heure 
+//changement couleur heure 
 var myDate = new Date();
 var hours = myDate.getHours();
 

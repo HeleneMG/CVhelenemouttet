@@ -30,7 +30,17 @@ header{
   margin: 0;
   padding: 0;
 }
- 
+
+/**boutons**/
+.switch{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+}
+.switch, .btn{
+  text-align: center;
+}
 .btn {
   background-color: rgb(175, 174, 174); 
   border: none;
@@ -45,11 +55,7 @@ header{
 .btn:hover{
   background-color: #ffb7bd;
 }
-.switch{
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 #horloge{
   text-align: center;
   padding-top: 0%;
@@ -90,7 +96,7 @@ hr{
   size: 1px;
 }
 
-/** SECTIONS **/
+/**SECTIONS**/
 
 ul{
   list-style-type: none;
@@ -215,25 +221,7 @@ footer{
   width: 55px; 
 }
 
-/** Modif selon l'heure**/
-
-.vert{
-    background-color: #98fb98;
-}
-.jaune{
-    background-color: #ffebcd;
-}
-.rose{
-    background-color: #FFF3FA;
-}
-.bleu{
-    background-color: #b0e0e6;
-}
-.bleufonce{
-    background-color: #000080;
-}
-
-/**Media Queries**/
+/**MEDIA QUERIES**/
 
 @media screen and (max-width: 375px) {
   header{

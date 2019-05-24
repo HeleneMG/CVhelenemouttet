@@ -31,6 +31,16 @@ header{
   padding: 0;
 }
 
+/** BOUTONS SWITCH **/
+.switch{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+}
+.switch, .btn{
+  text-align: center;
+}
 .btn {
   background-color: rgb(158, 159, 209); 
   border: none;
@@ -215,26 +225,26 @@ footer hr{
   width: 55px; 
 }
 
-/** Modif selon l'heure**/
+/** CHANGEMENT COULEUR HEURE **/
 
 .vert{
     background-color: #98fb98;
 }
 .jaune{
-    background-color: #ffebcd;
+    background-color: #fdf5e7;
 }
 .rose{
-    background-color: #FFF3FA;
+    background-color: rgb(255, 226, 243);
 }
 .bleu{
-    background-color: #b0e0e6;
+    background-color: #c6ecf1;
 }
 .bleufonce{
-    background-color: #000080;
+    background-color: #00005a;
 }
 
 
-/**Media Queries**/
+/**MEDIA QUERIES**/
 
 @media screen and (max-width: 375px) {
   header{
