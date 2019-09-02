@@ -6,7 +6,7 @@
     <link href="fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     <link href="fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" title="CSS0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" title="CSS0">
     <title>CV Hélène Mouttet</title>
   </head>
 

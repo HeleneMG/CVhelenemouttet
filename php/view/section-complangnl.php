@@ -17,15 +17,15 @@
         </div>
           <div class="comp2">
             <ul>
-              <li><img src="img/html.png" alt="logo html"></li>
-              <li><img src="img/css.png" alt="logo css"></li>
-              <li><img src="img/php.png" alt="logo php"></li>
-              <li><img src="img/javascript.png" alt="logo javascript"></li>
-              <li><img src="img/github.png"></li>
-              <li><img src="img/visual-studio.png" alt="logo Visual studio code"></li>
-              <li><img src="img/discord.png" alt="logo discord"></li>
-              <li><img src="img/slack.png" alt="logo slack"></li>
-              <li><img src="img/google.png" alt="logo google"></li>
+              <li><img src="assets/img/html.png" alt="logo html"></li>
+              <li><img src="assets/img/css.png" alt="logo css"></li>
+              <li><img src="assets/img/php.png" alt="logo php"></li>
+              <li><img src="assets/img/javascript.png" alt="logo javascript"></li>
+              <li><img src="assets/img/github.png"></li>
+              <li><img src="assets/img/visual-studio.png" alt="logo Visual studio code"></li>
+              <li><img src="assets/img/discord.png" alt="logo discord"></li>
+              <li><img src="assets/img/slack.png" alt="logo slack"></li>
+              <li><img src="assets/img/google.png" alt="logo google"></li>
             </ul>
           </div>
 

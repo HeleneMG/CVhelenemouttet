@@ -1,4 +1,4 @@
-<?php require "php/header.php" ?>
+<?php require "php/view/header.php" ?>
 
 <!-- PRESENTATION -->
     <section class="presentation">
@@ -6,7 +6,7 @@
     </section>
 
 <?php 
-require "php/section-complangnl.php";
-require "php/footer.php";
+require "php/view/section-complangnl.php";
+require "php/view/footer.php";
 ?>
     

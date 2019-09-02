@@ -6,7 +6,7 @@ $nom = $_REQUEST["nom"] ?? "";
 $email = $_REQUEST["email"] ?? "";    
 
 $ligne = "Nom : $nom, \nMail : $email\n\n"; 
-file_put_contents("newsletter.csv", $ligne, FILE_APPEND);
+file_put_contents("php/controller/newsletter.csv", $ligne, FILE_APPEND);
 
 @mail("webmaster@monsite.fr", "nouvelle inscription newsletter", $ligne);
 
