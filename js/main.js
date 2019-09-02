@@ -99,3 +99,26 @@ ScrollReveal().reveal('.reveallangues', {
   viewFactor: 0.2
 });
 
+//JS QUI ENVOIE LES INFOS DES FORM EN AJAX
+
+var listForm = document.querySelectorAll("form.ajax");
+
+listForm.forEach(function(element){
+  element.addEventListener('submit', function(event){
+    event.preventDefault();
+    var formData = new FormData(this);
+    fetch("url-traitement.php",{
+      method: "POST",
+      body: formData
+    })
+    .then((response)=>{
+      console.log(response);
+      return response.text();
+    })
+    .then((texteServeur)=>{
+      console.log(texteServeur);
+      var baliseConfirmation = document.querySelector("form .confirmation");
+      baliseConfirmation.innerHTML = texteServeur;
+    });
+  });
+});

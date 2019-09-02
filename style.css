@@ -187,6 +187,11 @@ text-align: left;
   font-size: 2em;
 }
 
+/*FORMULAIRES*/
+
+form{
+  display: block;
+}
 
 /**FOOTER**/
 

@@ -74,7 +74,7 @@
     </section>
     <section class="newsletter">
       <h3>Newsletter</h3>
-        <form action="url-traitement.php" method="get">
+        <form action="url-traitement.php" method="get" class="ajax">
           <label>Nom : <input type="text" name="nom" placeholder="entrez votre nom" id="nom" required></label>
           <label>Email : <input type="email" name="email" placeholder="entrez votre email" id="email" required></label>
           <button type="submit">Inscrivez-vous à ma newsletter</button>
