@@ -1,5 +1,5 @@
  
- //changement thème
+ /*CHANGEMENT THEME
  function setActiveStyleSheet(title) {
     var links = document.querySelectorAll('link[rel*="stylesheet"]');
     var i = links.length;
@@ -7,8 +7,9 @@
         links[i].disabled = links[i].getAttribute('title') !== title;
     }
 }
+*/
 
-//changement couleur heure 
+/*CHANGEMENT COULEUR HEURE
 var myDate = new Date();
 var hours = myDate.getHours();
 
@@ -27,9 +28,9 @@ else if (16 <= hours && hours < 22) // 16-22 soir
 else if (22 <= hours || hours < 5) // 22-5 nuit
 {
   document.body.className = 'bleu';
-}
+}*/
 
-//horloge 
+//HORLOGE 
 var myVar = setInterval(function () {myTimer()}, 1000);
       function myTimer() {
         var d = new Date();
@@ -37,7 +38,7 @@ var myVar = setInterval(function () {myTimer()}, 1000);
     document.getElementById("horloge").innerHTML = t;
   }
 
-  //scroll reveal
+  //SCROLL REVEAL
 ScrollReveal().reveal('h1', {
   duration: 3000,  
   scale: 0.8, 
@@ -52,34 +53,44 @@ ScrollReveal().reveal('h2', {
 
 ScrollReveal().reveal('.comp', {
   duration: 1500,
-  distance: '100px',
+  distance: '200px',
   origin: 'left',
-  scale: 1,
+  //scale: 1,
   reset: true
 });
 
 ScrollReveal().reveal('.star', {
   duration: 2000,
-  distance: '100px',
+  distance: '200px',
   origin: 'right',
-  scale: 1,
+  //scale: 1,
   reset: true
 });
 
 ScrollReveal().reveal('.diplomes', {
-  duration: 2500,
+  duration: 3000,
   origin: 'left',
   distance: '200px',
   reset: true,
   viewFactor: 0.2
 });
+
 ScrollReveal().reveal('.jobs', {
-  duration: 3500,
+  duration: 4000,
   origin: 'right',
   distance: '300px',
   reset: true,
   viewFactor: 0.2
 });
+
+ScrollReveal().reveal('.realisations h4', {
+  duration: 4000,
+  origin: 'bottom',
+  distance: '30px',
+  reset: true,
+  viewFactor: 0.2
+});
+
 ScrollReveal().reveal('.reveallangues', {
   duration: 3000,
   origin: 'top',
@@ -87,17 +98,4 @@ ScrollReveal().reveal('.reveallangues', {
   reset: true,
   viewFactor: 0.2
 });
-ScrollReveal().reveal('.coordonnees1', {
-  duration: 2000,
-  origin: 'left',
-  distance: '400px',
-  reset: true,
-  viewFactor: 0.7
-});
-ScrollReveal().reveal('.coordonnees2', {
-  duration: 2000,
-  origin: 'right',
-  distance: '400px',
-  reset: true,
-  viewFactor: 0.7
-});
+

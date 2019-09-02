@@ -1,15 +1,13 @@
-html{
-  margin: 0px;
-	padding: 0px;
-}
-body{
+html, body{
   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #373b41;
   font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
   font-weight: 100;
   color: #abb2bf;
-  margin: 0px;
-  padding: 0px;
 }
 
 a{
@@ -23,38 +21,39 @@ a:hover{
 /**HEADER**/
 
 header{
-  width: 99.7%;
-  background-color: #2a2e33;
-  height: 75vh;
-  border-style: solid;
-  border-color: #1E2126;
+  width: 100%;
+  height: 30%;
+  background-image: url(img/keyboard.jpg);
+  background-size: cover;
+  border: solid 1px #1E2126;
   margin: 0%;
   padding: 0%;
 }
-
-/**boutons**/
-.switch{
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1%;
-}
-.switch, .btn{
+h1{
   text-align: center;
+  font-size: 3.9rem;
+  font-weight: 400;
+  margin-top: 0;
+  padding-top: 1.2em;
 }
-.btn {
-  background-color: rgb(175, 174, 174); 
-  border: none;
-  color: white;
-  padding: 5px 28px;
+h2{
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 12px;
+  padding-top:1.5vh;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #e06c75;
 }
-.btn:hover{
-  background-color: #ffb7bd;
+nav ul{
+  display: flex;
+  width:100%;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  padding-top: 5.5vh;
+  background-color: rgba(0, 0, 0, 0.39);
+}
+nav .ul > * {
+    width:calc(100% / 4);
+    min-width:100px;
 }
 
 #horloge{
@@ -63,40 +62,6 @@ header{
   padding-top: 0%;
 }
 
-h1{
-  text-align: center;
-  font-size: 3.7em;
-  font-weight: 400;
-  margin-top: 0;
-  padding-top: 1.5em;
-}
-h2{
-  text-align: center;
-  padding-top:1.8vh;
-  font-size: 2.8em;
-  font-weight: 400;
-  color: #e06c75;
-}
-
-/**PRESENTATION**/
-
-.presentation p{
-  width:45%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 1.5em;
-  padding-bottom: 0.9em;
-  padding-top: 0.8em;
-}
-hr{
-  width:45%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  color: #abb2bf;
-  size: 1px;
-}
 
 /**SECTIONS**/
 
@@ -107,42 +72,59 @@ ul{
 }
 h4{
   color: #56b6c2;
-  font-size: 2.5em;
+  font-size: 2.2em;
 }
-
-.lang{
+.langue{
   color: #e06c75;
 }
-.etoiles{
-  color:#e06c75;
+
+/**PRESENTATION**/
+
+.presentation p{
+  width:45%;
+  margin: 3em auto;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-bottom: 0.9em;
+  padding-top: 0.8em;
+  border-top: solid 1px rgb(197, 197, 197);
+  border-bottom: solid 1px rgb(197, 197, 197);
 }
 
 /**COMPETENCES**/
 
 .competences h4{
   text-align: center;
-  padding-top: 2em;
+  padding-top: 1em;
   font-size: 3.2em;
 }
 .container{
   width: 70%;
   margin-right: auto;
   margin-left: auto;
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.5em;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 1em;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 2em
 }
 .comp{
-  grid-column: 1;
+  width: 25%;
   text-align: right;
-  padding-right: 0.8em;
+
 }
-.star{
+.comp2{
+width: 25%;
+text-align: left;
+}
+.etoiles{
+  color:#e06c75;
+  display: inline;
+  grid-column: 1;
+}
+.etoiles2{
   grid-column: 2;
-  text-align: left;
+  display: inline;
   color: rgb(83, 89, 99);
 }
 
@@ -183,6 +165,13 @@ h4{
   color: #abb2bf;
 }
 
+/** REALISATIONS **/
+
+.realisations h4{
+  text-align: center;
+  font-size: 3.2em;
+}
+
 /**LANGUES**/
 
 .langues h4{
@@ -197,6 +186,7 @@ h4{
   padding-bottom: 0.9em;
   font-size: 2em;
 }
+
 
 /**FOOTER**/
 
@@ -216,8 +206,8 @@ footer{
   position: fixed; 
   width: 45px; 
   height: 45px; 
-  bottom: 50px; 
-  right: 30px; 
+  /*bottom: 50px; 
+  right: 30px;*/ 
 } 
 #scroll_to_top img { 
   width: 55px; 
@@ -225,9 +215,9 @@ footer{
 
 /**MEDIA QUERIES**/
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 500px) {
   header{
-    height: 20vh;
+    height: 60%;
   }
 
   .trait{
@@ -236,5 +226,5 @@ footer{
   text-align: center;
   grid-column: 2;
   color: #abb2bf;
-}
+  }
 }
