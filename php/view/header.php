@@ -21,6 +21,7 @@
           <li><a href="index.php">Accueil</a></li>
           <li><a href="experience.php">Mon experience</a></li>
           <li><a href="realisations.php">Mes réalisations</a></li>
+          <li><a href="blog.php">Blog</a></li>
           <li><a href="contact.php">Contact</a></li>                   
         </ul>
       </nav>
