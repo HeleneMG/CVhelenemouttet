@@ -40,15 +40,15 @@ var myVar = setInterval(function () {myTimer()}, 1000);
 
   //SCROLL REVEAL
 ScrollReveal().reveal('h1', {
-  duration: 3000,  
+  duration: 1000,  
   scale: 0.8, 
-  reset: true 
+  reset: false 
 });
 
 ScrollReveal().reveal('h2', {
-  duration: 4000,
+  duration: 2000,
   scale: 0.6,
-  reset: true
+  reset: false
 });
 
 ScrollReveal().reveal('.comp', {
@@ -59,39 +59,33 @@ ScrollReveal().reveal('.comp', {
   reset: true
 });
 
-ScrollReveal().reveal('.star', {
-  duration: 2000,
-  distance: '200px',
-  origin: 'right',
-  //scale: 1,
-  reset: true
-});
-
 ScrollReveal().reveal('.diplomes', {
-  duration: 3000,
-  origin: 'left',
-  distance: '200px',
+  duration: 2000,
   reset: true,
   viewFactor: 0.2
 });
 
 ScrollReveal().reveal('.jobs', {
-  duration: 4000,
-  origin: 'right',
-  distance: '300px',
+  duration: 3000,
   reset: true,
   viewFactor: 0.2
 });
 
 ScrollReveal().reveal('.realisations h4', {
   duration: 4000,
-  origin: 'bottom',
   distance: '30px',
   reset: true,
   viewFactor: 0.2
 });
 
 ScrollReveal().reveal('.reveallangues', {
+  duration: 3000,
+  origin: 'top',
+  distance: '30px',
+  reset: true,
+  viewFactor: 0.2
+});
+ScrollReveal().reveal('.contacts', {
   duration: 3000,
   origin: 'top',
   distance: '30px',
@@ -122,3 +116,15 @@ listForm.forEach(function(element){
     });
   });
 });
+
+/*
+var listeFormAjax = document.querySelectorAll("form.ajax");
+listeFormAjax.forEach(function (formulaire) {
+  // on ajoute un event listener sur 'submit'
+  formulaire.addEventListener('submit', function (event) {
+    event.preventDefault(); // bloque l'envoi classique du formulaire
+
+    // JE PEUX ENVOYE
+  });
+})  
+*/

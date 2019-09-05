@@ -32,7 +32,7 @@ header{
   padding: 0%;
 }
 
-/** BOUTONS SWITCH **/
+/* BOUTONS SWITCH 
 .switch{
   width: 30%;
   margin-left: auto;
@@ -61,6 +61,7 @@ header{
   text-align: center;
   padding-top: 0%;
 }
+*/
 
 h1{
   text-align: center;
@@ -215,7 +216,6 @@ footer{
   text-align: center;
   font-size: 1.2em;
 }
-
 footer hr{
   color: #F5FFFA;
   height: 0.5px;
@@ -233,25 +233,6 @@ footer hr{
 #scroll_to_top img { 
   width: 55px; 
 }
-
-/** CHANGEMENT COULEUR HEURE **/
-
-.vert{
-    background-color: #98fb98;
-}
-.jaune{
-    background-color: #fdf5e7;
-}
-.rose{
-    background-color: rgb(255, 226, 243);
-}
-.bleu{
-    background-color: #c6ecf1;
-}
-.bleufonce{
-    background-color: #00005a;
-}
-
 
 /**MEDIA QUERIES**/
 

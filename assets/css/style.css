@@ -22,34 +22,37 @@ a:hover{
 
 header{
   width: 100%;
-  height: 30%;
   background-image: url(assets/img/keyboard.jpg);
+  background-color: #2a2e33;
   background-size: cover;
   border: solid 1px #1E2126;
   margin: 0%;
   padding: 0%;
 }
 h1{
+  margin: 0;
+  padding-top: 1em;
   text-align: center;
   font-size: 3.9rem;
   font-weight: 400;
-  margin-top: 0;
-  padding-top: 1.2em;
 }
 h2{
+  margin:0;
   text-align: center;
-  padding-top:1.5vh;
   font-size: 2.8rem;
   font-weight: 400;
   color: #e06c75;
+}
+nav{
+  margin-top: 77px;
+  padding-top: 3px;
+  border-top: solid 1px #1E2126;
 }
 nav ul{
   display: flex;
   width:100%;
   flex-wrap: wrap;
   justify-content: space-around; 
-  padding-top: 5.5vh;
-  background-color: rgba(0, 0, 0, 0.39);
 }
 nav .ul > * {
     width:calc(100% / 4);
@@ -61,7 +64,6 @@ nav .ul > * {
   text-align: center;
   padding-top: 0%;
 }
-
 
 /**SECTIONS**/
 
@@ -102,68 +104,61 @@ h4{
   width: 70%;
   margin-right: auto;
   margin-left: auto;
-  font-size: 1.5em;
-  line-height: 1.5em;
   display: flex;
-  flex-direction: column;
-  padding-bottom: 2em
 }
 .comp{
   width: 25%;
+  font-size: 1.2em;
   text-align: right;
-
+  line-height: 38px;
 }
 .comp2{
-width: 25%;
-text-align: left;
-}
-.etoiles{
-  color:#e06c75;
-  display: inline;
-  grid-column: 1;
-}
-.etoiles2{
-  grid-column: 2;
-  display: inline;
-  color: rgb(83, 89, 99);
+  width: 25%;
+  font-size: 1.2em;
+  text-align: left;
 }
 
 /**FORMATION - EXPERIENCES**/
 
-.formation h4{
-  font-size: 2.5em;
+.container2{
+  width: 680px;
+  height: 700px;
+  padding: 30px 0;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+}
+.container2 h4{
+  margin-top: 40px;
+}
+.formation{
+  width: calc(680px/2);
+  padding:20px;
   text-align: right;
+  font-size: 1.1em;
+  border: dotted 3.5px rgba(228, 219, 219, 0.05);
+  border-right: 0px;
+}
+.experiences{
+  width: calc(680px/2);
+  padding:20px;
+  text-align: left;
+  font-size: 1.1em;
+  border: dotted 3.5px rgba(228, 219, 219, 0.05);
+}
+.container2 span{
+  display: block;
+  padding-bottom: 5px;
 }
 .jobs{
+  font-size: 1.2em;
   color: #d19a66;
 }
 .diplomes{
+  font-size: 1.2em;
   color: #52F94C;
 }
-.container2{
-  width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-  display: grid;
-  grid-template-columns: 42% 16% 42%;
-}
-.formation{
-  text-align: right;
-  grid-column: 1;
-  font-size: 1.5em;
-}
-.experiences{
-  padding-top: 0.3;
-  grid-column: 3;
-  font-size: 1.5em;
-}
-.trait{
-  padding-top:4em;
-  font-size:2.2em;
-  text-align: center;
-  grid-column: 2;
-  color: #abb2bf;
-}
+
 
 /** REALISATIONS **/
 
@@ -188,9 +183,38 @@ text-align: left;
 }
 
 /*FORMULAIRES*/
-
-form{
-  display: block;
+.contact{
+  width: 50%;
+  margin: 40px auto;
+  padding: 0px 20px 30px 20px;
+  border: dotted 3.5px rgba(228, 219, 219, 0.05);
+}
+.contact h4{
+  text-align: center;
+  margin:30px;
+}
+.contact form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact form button{
+  width: 160px;
+}
+.contact form input{
+  width: 99%;
+  min-width: 200px;
+  margin: 10px 0;
+}
+.contact form label ::placeholder{
+  color: rgb(206, 202, 202);
+}
+.contact textarea{
+  min-width: 200px;
+  margin: 10px 0;
+}
+.contact button{
+  margin-top: 10px;
 }
 
 /**FOOTER**/
@@ -222,14 +246,6 @@ footer{
 
 @media screen and (min-width: 500px) {
   header{
-    height: 60%;
-  }
-
-  .trait{
-  padding-top:4em;
-  font-size:4em;
-  text-align: center;
-  grid-column: 2;
-  color: #abb2bf;
+    height: 290px;
   }
 }
