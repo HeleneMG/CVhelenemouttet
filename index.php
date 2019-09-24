@@ -2,4 +2,3 @@
 require "php/view/section-accueil.php";
 require "php/view/footer.php";
 ?>
-    

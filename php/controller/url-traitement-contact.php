@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $contactNom = $_REQUEST ["contact-nom"] ?? "";
 $contactEmail = $_REQUEST ["contact-email"] ?? "";

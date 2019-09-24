@@ -3,16 +3,16 @@ html, body{
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #373b41;
+  background-color: #1e1f20;
   font-family: 'Roboto Mono', monospace;
   font-size: 1em;
   font-weight: 100;
-  color: #abb2bf;
+  color: #ccd0d8;
 }
 
 a{
   text-decoration: none;
-  color: #abb2bf
+  color: white;
 }
 a:hover{
   color: #d19a66;
@@ -21,17 +21,22 @@ a:hover{
 /**HEADER**/
 
 header{
-  width: 100%;
-  background-image: url(assets/img/keyboard.jpg);
-  background-color: #2a2e33;
+  height: 97vh;
+  background-image: url(../img/keyboard2.jpg);
   background-size: cover;
   border: solid 1px #1E2126;
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.titres{
+  height: 79vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 h1{
-  margin: 0;
-  padding-top: 1em;
   text-align: center;
   font-size: 3.9rem;
   font-weight: 400;
@@ -44,9 +49,16 @@ h2{
   color: #e06c75;
 }
 nav{
-  margin-top: 77px;
-  padding-top: 3px;
-  border-top: solid 1px #1E2126;
+  height: 36px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  padding-top: 8px;
+  background-color: #151618;
+  border: solid 1px #1E2126;
+  font-size: 1.3em;
 }
 nav ul{
   display: flex;
@@ -55,14 +67,12 @@ nav ul{
   justify-content: space-around; 
 }
 nav .ul > * {
-    width:calc(100% / 4);
-    min-width:100px;
+  width:calc(100% / 4);
+  min-width:100px;
 }
-
-#horloge{
-  color: transparent;
-  text-align: center;
-  padding-top: 0%;
+.sticky {
+  position: fixed;
+  top: 0;
 }
 
 /**SECTIONS**/
@@ -83,46 +93,51 @@ h4{
 /**PRESENTATION**/
 
 .presentation p{
-  width:45%;
-  margin: 3em auto;
+  width: 35%;
+  margin: 6em auto;
   text-align: center;
+  padding: 1em 30px;
+  border-top: solid 23px rgba(197, 197, 197, 0.068);
+  border-bottom: solid 23px rgba(197, 197, 197, 0.068);
   font-size: 1.2rem;
-  padding-bottom: 0.9em;
-  padding-top: 0.8em;
-  border-top: solid 1px rgb(197, 197, 197);
-  border-bottom: solid 1px rgb(197, 197, 197);
+  line-height: 38px;
 }
 
 /**COMPETENCES**/
 
 .competences h4{
   text-align: center;
-  padding-top: 1em;
   font-size: 3.2em;
 }
 .container{
-  width: 70%;
+  width: 680px;
+  height: 700px;
+  padding: 30px 0;
   margin-right: auto;
   margin-left: auto;
   display: flex;
 }
 .comp{
-  width: 25%;
-  font-size: 1.2em;
+  width: calc(680px/2);
+  padding:20px;
   text-align: right;
-  line-height: 38px;
+  font-size: 2em;
+  border-right: 0px;
+  line-height: 56px;
 }
 .comp2{
-  width: 25%;
-  font-size: 1.2em;
+  width: calc(680px/2);
+  padding: 29px;
+  font-size: 1.1em;
   text-align: left;
+  line-height: 62px;
 }
 
 /**FORMATION - EXPERIENCES**/
 
 .container2{
   width: 680px;
-  height: 700px;
+  height: 760px;
   padding: 30px 0;
   margin-right: auto;
   margin-left: auto;
@@ -136,7 +151,6 @@ h4{
   padding:20px;
   text-align: right;
   font-size: 1.1em;
-  border: dotted 3.5px rgba(228, 219, 219, 0.05);
   border-right: 0px;
 }
 .experiences{
@@ -144,7 +158,6 @@ h4{
   padding:20px;
   text-align: left;
   font-size: 1.1em;
-  border: dotted 3.5px rgba(228, 219, 219, 0.05);
 }
 .container2 span{
   display: block;
@@ -159,7 +172,6 @@ h4{
   color: #52F94C;
 }
 
-
 /** REALISATIONS **/
 
 .realisations h4{
@@ -171,6 +183,7 @@ h4{
 
 .langues h4{
   font-size: 3em;
+  margin: 0px 0px 40px 0px;;
 }
 .langues{
   text-align: center;
@@ -184,68 +197,100 @@ h4{
 
 /*FORMULAIRES*/
 .contact{
-  width: 50%;
+  width: 30%;
   margin: 40px auto;
-  padding: 0px 20px 30px 20px;
-  border: dotted 3.5px rgba(228, 219, 219, 0.05);
+  padding: 18px 20px 35px 20px;
 }
 .contact h4{
   text-align: center;
-  margin:30px;
+  margin:40px;
 }
 .contact form{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.contact form button{
-  width: 160px;
-}
 .contact form input{
-  width: 99%;
+  height: 30px;
+  width: 97%;
   min-width: 200px;
   margin: 10px 0;
+  padding: 5px;
+  font-family: sans-serif;
 }
 .contact form label ::placeholder{
   color: rgb(206, 202, 202);
 }
 .contact textarea{
+  width: auto;
   min-width: 200px;
   margin: 10px 0;
+  padding: 5px;
+  font-family: sans-serif;
 }
-.contact button{
-  margin-top: 10px;
+.contact form button{
+  width: 160px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #151618;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  border: solid 3.5px rgba(228, 219, 219, 0.100);
+}
+.contact form button:hover{
+  cursor: pointer;
 }
 
 /**FOOTER**/
 
 footer{
-  background-color: #2a2e33;
+  background-color: #151618;
   border-style: solid;
   border-color: #1E2126;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-  text-align: center;
+  padding: 1.5em;
   font-size: 1.2em;
+  line-height: 30px;
 }
-
+footer ul{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.col1,.col2,.col3{
+  width: calc(100% / 3);
+  flex-wrap: wrap;
+}
+.col1{
+  text-align: right;
+}
+.col2{
+  display: flex;
+justify-content: center;
+}
+.col2 li{
+  margin: 10px;
+}
+.col3{
+  text-align: left;
+}
 /** TO TOP **/
 
-#scroll_to_top { 
+#toTop { 
+  display:none;
   position: fixed; 
-  width: 45px; 
-  height: 45px; 
-  /*bottom: 50px; 
-  right: 30px;*/ 
+  bottom: 40px; 
+  right: 30px;
+  cursor: pointer;
 } 
-#scroll_to_top img { 
-  width: 55px; 
-}
+#toTop img { 
+  width: 35px; 
+  height: 35px; }
 
-/**MEDIA QUERIES**/
+/**MEDIA QUERIES*
 
 @media screen and (min-width: 500px) {
   header{
     height: 290px;
   }
-}
+}*/
