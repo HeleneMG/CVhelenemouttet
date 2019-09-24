@@ -1,5 +1,5 @@
 <div class="container2">
-    <section class="formation">
+    <section class="content formation">
         <h4>Formation</h4>
         <ul>
             <li><span class="diplomes">Formation développeur.se Web et Web Mobile JavaScript/Php</span><br>
@@ -21,8 +21,8 @@
         <ul>
             <li><span class="jobs">Développeuse Stagiaire</span></br>
                 Juillet 2019</br>
-                >Participation à la refonte d'une partie du site de Market Invaders</br>
-                >Utilisation de Php, Smarty, HTML, CSS , Netbeans, Mattermost</br>
+                Participation à la refonte d'une partie du site de Market Invaders</br>
+                Utilisation de Php, Smarty, HTML, CSS , Netbeans, Mattermost</br>
                 Net Invaders, Gardanne</li></br>
             <li><span class="jobs">Opératrice de Conditionnement en salle blanche ISO 5</span></br>
                 Février 2016 - Décembre 2017<br>

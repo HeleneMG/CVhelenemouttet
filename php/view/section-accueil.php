@@ -4,7 +4,7 @@
 </section>
 
 <!-- COMPETENCES -->
-<section class="competences">
+<section class="content competences">
     <h4>Compétences techniques</h4>
     <div class="container">
         <div class="comp">

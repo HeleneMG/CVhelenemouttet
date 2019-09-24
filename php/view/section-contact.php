@@ -1,5 +1,5 @@
 <main>
-    <section class="contact">
+    <section class="content contact">
         <h4>Contact</h4>
         <form action="url-traitement.php" method="get" class="ajax">
             <label id="contact-nom">Nom</label>

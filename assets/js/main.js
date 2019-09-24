@@ -44,7 +44,7 @@ ScrollReveal().reveal('.reveallangues', {
   reset: true,
   viewFactor: 0.2
 });
-ScrollReveal().reveal('.contacts', {
+ScrollReveal().reveal('.contact', {
   duration: 3000,
   origin: 'top',
   distance: '30px',
@@ -77,6 +77,14 @@ mybutton.addEventListener('click', function topFunction() {
   $("html, body").animate({ scrollTop: 0 }, 900);
 });
 
+//AJAX ONGLETS
+$(function () {
+  $('.menu a').live('click', function (e) {
+    $('.content').load($(this).attr('href'));
+    e.preventDefault();
+  });
+  $('.menu a:first').trigger('click');
+});
 
 //JS QUI ENVOIE LES INFOS DES FORM EN AJAX
 
