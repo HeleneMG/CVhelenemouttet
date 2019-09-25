@@ -1,5 +1,5 @@
 <main>
-    <section class="content contact">
+    <section class="content contact" id="contact">
         <h4>Contact</h4>
         <form action="url-traitement.php" method="get" class="ajax">
             <label id="contact-nom">Nom</label>
@@ -9,7 +9,7 @@
             <input type="text" name="contact-email" id="contact-email" placeholder="jonthebastard@mail.me" required>
 
             <label id="contact-message">Message</label>
-            <textarea name="contact-message" id="contact" cols="40" rows="10" placeholder="Winter is coming"></textarea>
+            <textarea name="contact-message" id="contact" cols="50" rows="10" placeholder="Winter is coming"></textarea>
 
             <button type="submit">Envoyez votre message</button>
             <div class="confirmation"></div>
@@ -18,6 +18,4 @@
         </form>
     </section>
 </main>
-</body>
 
-</html>

@@ -17,7 +17,7 @@
       </ul>
   </footer>
   <div id="toTop">
-      <a class="top" href="#"><img src="assets/img/arrow3.png" alt="Retourner en haut" 
+      <a class="top" href="#"><img src="assets/img/arrow7.png" alt="Retourner en haut" 
   </div>
 
   <script src="assets/js/main.js"></script>

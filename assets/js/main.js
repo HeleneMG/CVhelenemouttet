@@ -1,4 +1,5 @@
 //SCROLL REVEAL
+
 ScrollReveal().reveal('h1', {
   duration: 1000,
   scale: 0.8,
@@ -13,8 +14,15 @@ ScrollReveal().reveal('h2', {
 
 ScrollReveal().reveal('.comp', {
   duration: 1500,
-  distance: '200px',
-  origin: 'left',
+  distance: '20px',
+  origin: 'bottom',
+  //scale: 1,
+  reset: true
+});
+ScrollReveal().reveal('.comp img', {
+  duration: 2000,
+  distance: '30px',
+  origin: 'top',
   //scale: 1,
   reset: true
 });
@@ -38,9 +46,22 @@ ScrollReveal().reveal('.titreReal', {
 });
 
 ScrollReveal().reveal('.reveallangues', {
-  duration: 3000,
-  origin: 'top',
-  distance: '30px',
+  duration: 2000,
+  distance: '0px',
+  reset: true,
+  viewFactor: 0.2
+});
+ScrollReveal().reveal('#langue1', {
+  duration: 1500,
+  origin: 'left',
+  distance: '100px',
+  reset: true,
+  viewFactor: 0.2
+});
+ScrollReveal().reveal('#langue2', {
+  duration: 2000,
+  origin: 'right',
+  distance: '90px',
   reset: true,
   viewFactor: 0.2
 });
@@ -53,6 +74,7 @@ ScrollReveal().reveal('.contact', {
 });
 
 //fixed NAVBAR
+
 window.onscroll = function () {fixedNavbar(), scrollFunction()};
 var navbar = document.querySelector("nav");
 var mybutton = document.querySelector("#toTop");
@@ -66,28 +88,26 @@ function fixedNavbar() {
   }
 }
 //TO TOP BUTTON
+
 function scrollFunction() {
   if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-    $(mybutton).fadeIn(900);
+    $(mybutton).fadeIn(800);
   } else {
-    $(mybutton).fadeOut(900)
+    $(mybutton).fadeOut(800)
   }
 }
 mybutton.addEventListener('click', function topFunction() {
   $("html, body").animate({ scrollTop: 0 }, 900);
 });
 
-//AJAX ONGLETS
-$(function () {
-  $('.menu a').live('click', function (e) {
-    $('.content').load($(this).attr('href'));
-    e.preventDefault();
-  });
-  $('.menu a:first').trigger('click');
+//SMOOTH SCROLLING TO ANCHORS
+
+$('a[href*=\\#]').on('click', function (event) {
+  event.preventDefault();
+  $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 500);
 });
 
 //JS QUI ENVOIE LES INFOS DES FORM EN AJAX
-
 var listForm = document.querySelectorAll("form.ajax");
 
 listForm.forEach(function(element){
@@ -121,44 +141,3 @@ listeFormAjax.forEach(function (formulaire) {
   });
 })
 */
-
-
-
-/*CHANGEMENT THEME
-function setActiveStyleSheet(title) {
-   var links = document.querySelectorAll('link[rel*="stylesheet"]');
-   var i = links.length;
-   while (links[--i]) {
-       links[i].disabled = links[i].getAttribute('title') !== title;
-   }
-}
-*/
-
-/*CHANGEMENT COULEUR HEURE
-var myDate = new Date();
-var hours = myDate.getHours();
-
-if (5 <= hours && hours < 9) // 5-9 jour
-{
-  document.body.className = 'vert';
-}
-else if (9 <= hours && hours < 16) // 9-17 jour
-{
-  document.body.className = 'jaune';
-}
-else if (16 <= hours && hours < 22) // 16-22 soir
-{
-  document.body.className = 'rose';
-}
-else if (22 <= hours || hours < 5) // 22-5 nuit
-{
-  document.body.className = 'bleu';
-}*/
-
-/*HORLOGE
-var myVar = setInterval(function () {myTimer()}, 1000);
-      function myTimer() {
-        var d = new Date();
-    var t = d.toLocaleTimeString();
-    document.getElementById("horloge").innerHTML = t;
-  }*/

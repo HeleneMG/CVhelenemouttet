@@ -22,10 +22,10 @@ a:hover{
 
 header{
   height: 97vh;
-  background-color: rgb(3, 1, 8);
-  border: solid 1px #1E2126;
   margin: 0;
   padding: 0;
+  background-color: rgb(3, 1, 8);
+  border: solid 1px #1E2126;
   position: relative;
 }
 .titres{
@@ -53,7 +53,7 @@ nav{
   bottom: 0;
   right: 0;
   left: 0;
-  z-index: 99;
+  z-index: 1;
   padding-top: 8px;
   background-color: #151618;
   border: solid 1px #1E2126;
@@ -91,13 +91,16 @@ h4{
 
 /**PRESENTATION**/
 
+.presentation{
+  padding-top: 30px;
+}
 .presentation p{
   width: 35%;
   margin: 6em auto;
-  text-align: center;
   padding: 1em 30px;
   border-top: solid 23px rgba(197, 197, 197, 0.068);
   border-bottom: solid 23px rgba(197, 197, 197, 0.068);
+  text-align: center;
   font-size: 1.2rem;
   line-height: 38px;
 }
@@ -108,28 +111,54 @@ h4{
   text-align: center;
   font-size: 3.2em;
 }
-.container{
-  width: 680px;
-  height: 700px;
-  padding: 30px 0;
-  margin-right: auto;
-  margin-left: auto;
+.comp ul{
+  width: 46%;
+  padding-top: 50px;
+  margin:0px auto 68px auto;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center
 }
-.comp{
-  width: calc(680px/2);
-  padding:20px;
-  text-align: right;
-  font-size: 2em;
+.comp li{
+  height: 110px;
+  padding: 50px;
+  text-align: center;
+  font-size: 1em;
   border-right: 0px;
   line-height: 56px;
 }
-.comp2{
-  width: calc(680px/2);
-  padding: 29px;
-  font-size: 1.1em;
-  text-align: left;
-  line-height: 62px;
+.comp img{
+  width: 80px;
+  height: auto;
+  object-fit:cover
+}
+
+/**LANGUES**/
+
+.langues{
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 6em;
+  background-color: #151618;
+}
+.langues h4{
+  font-size: 3em;
+  margin: 90px 0px 40px 0px;
+}
+.langues ul{
+  padding-bottom: 0.9em;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center
+}
+.langues img{
+  width: 100px;
+  height: 50px;
+  object-fit:cover;
+  padding: 40px;
 }
 
 /**FORMATION - EXPERIENCES**/
@@ -150,7 +179,6 @@ h4{
   padding:80px;
   text-align: right;
   font-size: 1.1em;
-  border-right: 0px;
 }
 .experiences{
   width: calc(100%/2);
@@ -167,31 +195,30 @@ h4{
   color: #d19a66;
 }
 .diplomes{
-  font-size: 1.2em;
-  color: #52F94C;
+  font-size: 1.2em;  
+  color: #e06c75;
 }
 
 /** REALISATIONS **/
 
+.realisations{
+  background-color: #151618;
+  padding: 40px;
+}
 .realisations h4{
   text-align: center;
   font-size: 3.2em;
 }
-
-/**LANGUES**/
-
-.langues h4{
-  font-size: 3em;
-  margin: 0px 0px 40px 0px;;
+.travaux ul{
+  width: 640px;
+  margin: 10px auto 0px auto;
+  display: flex;
+  flex-wrap: wrap;
 }
-.langues{
-  text-align: center;
-  padding-top: 1.5em;
-  padding-bottom: 2em;
-}
-.langues ul{
-  padding-bottom: 0.9em;
-  font-size: 2em;
+.travaux img{
+  width: 600px;
+  height: 277px;
+  padding: 20px; 
 }
 
 /*FORMULAIRES*/
@@ -211,20 +238,24 @@ h4{
 }
 .contact form input{
   height: 30px;
-  width: 97%;
   min-width: 200px;
   margin: 10px 0;
-  padding: 5px;
+  padding: 10px;
   font-family: sans-serif;
 }
 .contact form label ::placeholder{
   color: rgb(206, 202, 202);
 }
+.contact form label{
+  text-align: center;
+  margin-top: 24px;
+}
 .contact textarea{
-  width: auto;
+  background-color: rgba(255, 255, 255, 0.938);
+  border: none;
   min-width: 200px;
   margin: 10px 0;
-  padding: 5px;
+  padding: 20px;
   font-family: sans-serif;
 }
 .contact form button{
@@ -243,18 +274,25 @@ h4{
 /**FOOTER**/
 
 footer{
+  height: 20vh;
   background-color: black;
   border-style: solid;
   border-color: #1E2126;
   padding: 1.5em;
-  font-size: smaller;
+  font-size: 1em;
   line-height: 30px;
 }
 footer ul{
+  height: 20vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   width: 100%;
+}
+footer img{
+  width: 32px;
+  height: 32px;
 }
 .col1,.col2,.col3{
   width: calc(100% / 3);
@@ -265,7 +303,7 @@ footer ul{
 }
 .col2{
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
 .col2 li{
   margin: 10px;
@@ -278,18 +316,38 @@ justify-content: center;
 #toTop { 
   display:none;
   position: fixed; 
+  z-index: 2;
   bottom: 40px; 
-  right: 30px;
+  right: 40px;
   cursor: pointer;
 } 
 #toTop img { 
-  width: 35px; 
-  height: 35px; }
+  width: 64px; 
+  height: 64px; 
+}
 
-/**MEDIA QUERIES*
+/*Extra small devices (portrait phones, less than 576px)
+@media (min-width: 575.98px) { 
 
-@media screen and (min-width: 500px) {
-  header{
-    height: 290px;
+
+/* Small devices (landscape phones, less than 768px)*/
+@media screen and (max-width: 767.98px){   
+  html, body{
+    font-size: bigger;
   }
-}*/
+  header{
+    height: 35vh;
+  }
+  .titres{
+    height: 30vh;
+  }
+  .contact{
+    width: 80%;
+  }
+ }
+
+/* Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+/* Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }*/
